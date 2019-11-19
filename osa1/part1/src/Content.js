@@ -3,6 +3,6 @@ import { Part } from './Part';
 
 export const Content = ({ contents }) => {
   return (
-      contents.map(content => <Part name={content.name} exercise={content.exercise}></Part>)
+      contents.map(content => <Part name={content.name} exercises={content.exercises}></Part>)
   )
 }

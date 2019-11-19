@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const Part = ({ name, exercise }) => {
+export const Part = ({ name, exercises }) => {
   return (
     <p>
-        {name} {exercise}
+        {name} {exercises}
     </p>
   )
 }

@@ -19,15 +19,15 @@ const App = () => {
         <Content contents={[
             { 
                 name: part1,
-                exercise: exercises1
+                exercises: exercises1
             },
             { 
                 name: part2,
-                exercise: exercises2
+                exercises: exercises2
             },
             { 
                 name: part3,
-                exercise: exercises3
+                exercises: exercises3
             },
         ]}/>
         <Total exercises={[exercises1, exercises2, exercises3 ]}/>
