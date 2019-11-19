@@ -131,7 +131,10 @@ const resolvers = {
             }
             return books;
         },
-        allAuthors: () => authors
+        allAuthors: () => {
+            console.log(authors);
+            return authors
+        }
     },
     Author: {
         born: (root) => root.born ? root.born : null,
