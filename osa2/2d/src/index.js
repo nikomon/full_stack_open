@@ -27,7 +27,6 @@ export const App = () => {
         }
         return;
     }
-    console.log("create");
     
     create(person).then((person) => {
       setPersons(persons.concat(person));
