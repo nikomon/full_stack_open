@@ -10,6 +10,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "prestart-phonebook": "cp src/phonebook.js src/index.js",
+    "start-phonebook": "react-scripts start",
+    "prestart-countries": "cp src/countries.js src/index.js",
+    "start-countries": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
