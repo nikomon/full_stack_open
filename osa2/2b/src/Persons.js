@@ -1,4 +1,5 @@
-import { React } from 'react';
+import React from 'react';
+
 
 export const Persons = ({ persons }) => {
     return (
@@ -11,14 +12,14 @@ export const Persons = ({ persons }) => {
         </thead>
         <tbody>
         { 
-            persons.map(({ name, number }) => {
+            persons.length > 0  ? persons.map(({ name, number }) => {
             return (
             <tr>
                 <td>{name}</td>
                 <td>{number}</td>
             </tr>
             );
-            })
+            }) : null
         }
         </tbody>
         </table>
