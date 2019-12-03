@@ -82,5 +82,7 @@ response.send(`<p>Phonebook has info for ${persons.length} people</p>
 ${new Date(Date.now())}`);
 });
 
-const port = 3001
-app.listen(port)
+const PORT = process.env.PORT || 3001
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`)
+})
