@@ -84,5 +84,4 @@ response.send(`<p>Phonebook has info for ${persons.length} people</p>
 ${new Date(Date.now())}`);
 });
 
-const port = 3001
-app.listen(port)
+app.listen((process.env.PORT || 5000))
